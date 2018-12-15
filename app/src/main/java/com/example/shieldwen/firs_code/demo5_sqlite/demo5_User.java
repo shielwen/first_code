@@ -8,7 +8,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.shieldwen.firs_code.R;
+import com.example.shieldwen.firs_code.demo5_sqlite.dao.Userdao;
 import com.example.shieldwen.firs_code.demo5_sqlite.model.Myuser;
+
+import java.util.ArrayList;
 
 public class demo5_User extends AppCompatActivity implements View.OnClickListener {
     private EditText editText1;
@@ -22,7 +25,7 @@ public class demo5_User extends AppCompatActivity implements View.OnClickListene
     private Button button9;
     private TextView textview10;
     private Button button11;
-
+    private  ArrayList<String> Userlist = new ArrayList<String>();
 
 
     @Override
@@ -43,31 +46,37 @@ public class demo5_User extends AppCompatActivity implements View.OnClickListene
         textview10 = (TextView)findViewById(R.id.demo5_user_button10);
         button9 = (Button)findViewById(R.id.demo5_user_button11);
     }
-               /*  Myuser myuser =new Myuser();
-                myuser.setUsername("123465");
-                myuser.setPassword("123456");
-                Userdao.insert(myuser);
-                Userdao.query(list);
-    StringBuffer text = new StringBuffer();
-                for(int i=0;i<list.size();i++){
-        String text1 = list.get(i);
-
-        text.append(i+"---"+text1);
-        text.append("\n");
-    }
-                textView.setText(text);*/
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.demo5_user_button1:
-                Myuser myuser = new Myuser();
-                myuser.setId(1);
+                Myuser myuser1 = new Myuser();
+                myuser1.setId(Integer.parseInt(editText1.getText().toString()));
+                myuser1.setUsername(editText2.getText().toString());
+                myuser1.setPassword(editText3.getText().toString());
+                Userdao.insert(myuser1);
                 break;
             case R.id.demo5_user_button2:
+                Myuser myuser2 = new Myuser();
+                myuser2.setUsername(editText5.getText().toString());
+                Userdao.delete(myuser2);
                 break;
             case R.id.demo5_user_button3:
+                Myuser myuser3 = new Myuser();
+                myuser3.setUsername(editText7.getText().toString());
+                myuser3.setPassword(editText8.getText().toString());
+                Userdao.updata(myuser3);
                 break;
             case R.id.demo5_user_button4:
+                Userdao.query(Userlist);
+                StringBuffer text = new StringBuffer();
+                for(int i=0;i<Userlist.size();i++){
+                    String text1 = Userlist.get(i);
+                    text.append((i+1)/2+"---"+text1);
+                    text.append("\n");
+                    textview10.setText(text);
+                }
+
                 break;
 
         }

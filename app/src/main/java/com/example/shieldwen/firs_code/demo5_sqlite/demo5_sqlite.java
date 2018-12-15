@@ -32,7 +32,7 @@ public class demo5_sqlite extends AppCompatActivity implements OnClickListener{
     private Button button10;
     private TextView textView;
     private Intent intent;
-    ArrayList<String> list = new ArrayList<String>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
