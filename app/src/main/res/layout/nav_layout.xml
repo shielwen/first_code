@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@mipmap/pic4">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_item_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/first_pic2">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:id="@+id/nav_item_id1"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:text="菜道"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

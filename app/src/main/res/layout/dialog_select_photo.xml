@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="60dp"
+    android:paddingRight="60dp">
+    <TextView
+        android:id="@+id/tv_select_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="从相册中选取" />
+    <LinearLayout
+        android:background="#9CA9A9"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_select_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="拍摄照片" />
+    <LinearLayout
+        android:background="#9CA9A9"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_select_touxiang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="查看照片" />
+</LinearLayout>

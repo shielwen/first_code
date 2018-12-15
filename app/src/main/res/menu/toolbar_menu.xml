@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_button1"
+        android:icon="@drawable/app_image_sousuo"
+        android:title="button1"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/toolbar_button2"
+        android:icon="@drawable/first_pic"
+        android:title="button2"
+        app:showAsAction="never"></item>
+    <item
+    android:id="@+id/toolbar_button4"
+    android:icon="@drawable/first_pic"
+    android:title="button3"
+    app:showAsAction="never"></item>
+    <item
+        android:id="@+id/toolbar_button5"
+        android:icon="@drawable/first_pic"
+        android:title="button3"
+        app:showAsAction="never"></item>
+</menu>

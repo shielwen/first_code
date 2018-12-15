@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_yemian"
+            android:layout_width="match_parent"
+            android:background="@color/text"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <FrameLayout
+            android:layout_below="@+id/toolbar_yemian"
+            android:id="@+id/fragment_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fragment_buttom"
+            android:layout_alignParentStart="true">
+
+        </FrameLayout>
+    <fragment
+        android:id="@+id/fragment_buttom"
+        android:layout_alignParentBottom="true"
+        android:name="com.example.shieldwen.firs_code.demo2.demo2_fragment_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </fragment>
+    </RelativeLayout>
+    <!-- layout_gravity="start" is important-->
+   <android.support.design.widget.NavigationView
+       android:id="@+id/nav_view"
+       android:layout_gravity="start"
+       app:menu="@menu/nav_menu"
+       app:headerLayout="@layout/nav_layout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

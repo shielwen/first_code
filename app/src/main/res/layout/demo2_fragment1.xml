@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/fragment1_button0"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical|center"
+                android:textColor="@color/white"
+                android:background="@mipmap/pic7"
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <TextView
+                android:id="@+id/fragment1_button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/first_pic2"
+                android:gravity="center_vertical|center"
+                android:text="粥"
+                android:textSize="0sp" />
+            <TextView
+                android:text="肉"
+                android:id="@+id/fragment1_button2"
+                android:background="@mipmap/first_pic2"
+                android:gravity="center_vertical|center"
+                android:textSize="0sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="鱼"
+                android:id="@+id/fragment1_button3"
+                android:background="@mipmap/first_pic2"
+                android:gravity="center_vertical|center"
+                android:textSize="0sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="瓜"
+                android:id="@+id/fragment1_button4"
+                android:background="@mipmap/first_pic2"
+                android:gravity="center_vertical|center"
+                android:textSize="0sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:gravity="center_vertical|center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="早餐"
+                android:textSize="15sp" />
+            <TextView
+                android:gravity="center_vertical|center"
+                android:text="午餐"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center_vertical|center"
+                android:text="晚餐"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:gravity="center_vertical|center"
+                android:text="点心"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/text1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+            <TextView
+                android:id="@+id/fragment1_button5"
+                android:text="#热门推荐"
+                android:textSize="20sp"
+                android:background="@mipmap/pic5"
+                android:gravity="center_vertical|center"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/fragment1_button6"
+                android:text="#明星榜单"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:background="@mipmap/pic6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+            <TextView
+                android:id="@+id/fragment1_button7"
+                android:text="#地方特色"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:background="@mipmap/pic7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <TextView
+            android:id="@+id/fragment1_button8"
+            android:text="#猪肉炖粉条"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@mipmap/pic8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/text1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="   #精品菜单"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/fragment1_button9"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@mipmap/pic9"
+            android:gravity="center_vertical|center"
+            android:text="#小菜系列"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/fragment1_button10"
+            android:layout_margin="10dp"
+            android:text="#爆肝系列"
+            android:textSize="30sp"
+            android:gravity="center_vertical|center"
+            android:textColor="@color/white"
+            android:background="@mipmap/pic10"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/fragment1_button11"
+            android:layout_margin="10dp"
+            android:text="#红烧系列"
+            android:textSize="30sp"
+            android:gravity="center_vertical|center"
+            android:textColor="@color/white"
+            android:background="@mipmap/pic11"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+        <TextView
+            android:background="@mipmap/pic12"
+            android:layout_gravity="center"
+            android:id="@+id/fragment1_button12"
+            android:layout_margin="10dp"
+            android:text="#西式系列"
+            android:textSize="30sp"
+            android:gravity="center_vertical|center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+
+
+    </ScrollView>

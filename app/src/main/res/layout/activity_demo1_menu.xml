@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text3"
+    android:orientation="vertical"
+    tools:context=".demo1.demo1_menu">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/demo1_menu_button1"
+    android:layout_gravity="center"
+    android:background="@mipmap/pic4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:text="简介"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="简介"
+        android:id="@+id/demo1_menu_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="做法"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/demo1_menu_button3"
+        android:text="做法"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="小贴士"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/demo1_menu_button4"
+        android:text="小贴士"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/三张分享的图"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/demo1_menu_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="25dp"
+            android:src="@mipmap/logo_wechat"
+            android:text="微信"
+            android:textColor="@color/text" />
+
+        <ImageView
+            android:id="@+id/demo1_menu_wechat_mements"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="25dp"
+            android:src="@mipmap/logo_wechat_moments"
+            android:text="朋友圈"
+            android:textColor="@color/text" />
+
+        <ImageView
+            android:id="@+id/demo1_menu_qzone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="25dp"
+            android:src="@mipmap/logo_qzone"
+            android:text="QQ空间"
+            android:textColor="@color/text" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/文字"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="朋友圈"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="QQ"
+            android:textColor="@color/text" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

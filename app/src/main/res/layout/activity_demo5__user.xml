@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".demo5_sqlite.demo5_User">
+  <LinearLayout
+      android:padding="20dp"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+            android:text="增"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+      <EditText
+          android:id="@+id/demo5_user_button1"
+          android:hint="id"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/demo5_user_button2"
+          android:hint="username"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/demo5_user_button3"
+          android:hint="password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/demo5_user_button4"
+          android:text="增"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <View
+          android:layout_margin="20dp"
+          android:background="@color/text"
+          android:layout_width="match_parent"
+          android:layout_height="10dp"></View>
+
+      <TextView
+          android:text="删除"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="50dp" />
+      <EditText
+          android:id="@+id/demo5_user_button5"
+          android:hint="username"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/demo5_user_button6"
+          android:text="删除"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <View
+          android:layout_margin="20dp"
+          android:background="@color/text"
+          android:layout_width="match_parent"
+          android:layout_height="10dp"></View>
+      <TextView
+          android:text="修改"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="50dp" />
+      <EditText
+          android:id="@+id/demo5_user_button7"
+          android:hint="username"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/demo5_user_button8"
+          android:hint="password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/demo5_user_button9"
+          android:text="修改"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <View
+          android:layout_margin="20dp"
+          android:background="@color/text"
+          android:layout_width="match_parent"
+          android:layout_height="10dp"></View>
+
+      <TextView
+          android:text="查询"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="50dp" />
+      <TextView
+          android:id="@+id/demo5_user_button10"
+          android:text="内容"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <Button
+          android:id="@+id/demo5_user_button11"
+          android:text="查询"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+      <View
+          android:layout_margin="20dp"
+          android:background="@color/text"
+          android:layout_width="match_parent"
+          android:layout_height="10dp"></View>
+
+
+  </LinearLayout>
+
+</ScrollView>
