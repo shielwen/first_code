@@ -25,13 +25,14 @@ public class demo5_User extends AppCompatActivity implements View.OnClickListene
     private Button button9;
     private TextView textview10;
     private Button button11;
-    private  ArrayList<String> Userlist = new ArrayList<String>();
+    public   ArrayList<String> Userlist = new ArrayList<String>();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo5__user);
+        findview();
     }
     public  void  findview(){
         editText1 = findViewById(R.id.demo5_user_button1);
@@ -44,39 +45,50 @@ public class demo5_User extends AppCompatActivity implements View.OnClickListene
         editText8 = findViewById(R.id.demo5_user_button8);
         button9 = (Button)findViewById(R.id.demo5_user_button9);
         textview10 = (TextView)findViewById(R.id.demo5_user_button10);
-        button9 = (Button)findViewById(R.id.demo5_user_button11);
+        button11 = (Button)findViewById(R.id.demo5_user_button11);
+        button4.setOnClickListener(this);
+        button6.setOnClickListener(this);
+        button9.setOnClickListener(this);
+        button11.setOnClickListener(this);
+
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.demo5_user_button1:
+            case R.id.demo5_user_button4:
                 Myuser myuser1 = new Myuser();
                 myuser1.setId(Integer.parseInt(editText1.getText().toString()));
                 myuser1.setUsername(editText2.getText().toString());
                 myuser1.setPassword(editText3.getText().toString());
                 Userdao.insert(myuser1);
                 break;
-            case R.id.demo5_user_button2:
+            case R.id.demo5_user_button6:
                 Myuser myuser2 = new Myuser();
                 myuser2.setUsername(editText5.getText().toString());
                 Userdao.delete(myuser2);
                 break;
-            case R.id.demo5_user_button3:
+            case R.id.demo5_user_button9:
                 Myuser myuser3 = new Myuser();
                 myuser3.setUsername(editText7.getText().toString());
                 myuser3.setPassword(editText8.getText().toString());
                 Userdao.updata(myuser3);
                 break;
-            case R.id.demo5_user_button4:
+            case R.id.demo5_user_button11:
                 Userdao.query(Userlist);
                 StringBuffer text = new StringBuffer();
                 for(int i=0;i<Userlist.size();i++){
                     String text1 = Userlist.get(i);
-                    text.append((i+1)/2+"---"+text1);
-                    text.append("\n");
-                    textview10.setText(text);
-                }
+                    if(i%2==0){
+                        text.append("账号："+"---"+text1);  text.append("\n");
+                    }else {
+                        text.append("密码："+"---"+text1);  text.append("\n");
+                    }
 
+
+
+
+                }
+                textview10.setText(text+"123");
                 break;
 
         }

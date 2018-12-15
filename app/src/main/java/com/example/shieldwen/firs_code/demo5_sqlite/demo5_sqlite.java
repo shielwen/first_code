@@ -51,7 +51,6 @@ public class demo5_sqlite extends AppCompatActivity implements OnClickListener{
         button8 = findViewById(R.id.demo5_sqlite_button8);
         button9 = findViewById(R.id.demo5_sqlite_button9);
         button10 = findViewById(R.id.demo5_sqlite_button10);
-        textView = findViewById(R.id.demo5_sqlite_text1);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -62,7 +61,6 @@ public class demo5_sqlite extends AppCompatActivity implements OnClickListener{
         button8.setOnClickListener(this);
         button9.setOnClickListener(this);
         button10.setOnClickListener(this);
-        textView.setOnClickListener(this);
     }
 
     @Override
