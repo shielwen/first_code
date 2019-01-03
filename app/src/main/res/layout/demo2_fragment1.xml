@@ -9,52 +9,83 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/fragment1_button0"
-                android:textSize="30sp"
-                android:layout_gravity="center"
-                android:gravity="center_vertical|center"
-                android:textColor="@color/white"
-                android:background="@mipmap/pic7"
-                android:layout_width="match_parent"
-                android:layout_height="140dp" />
-        <LinearLayout
-            android:layout_marginTop="15dp"
+        <RelativeLayout
             android:orientation="horizontal"
+            android:background="@color/color_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_centerInParent="true"
+                android:text="首页"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/demo2_fragment1_find"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:src="@drawable/icon_find" />
+        </RelativeLayout>
+        <com.youth.banner.Banner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/text1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:layout_width="match_parent"
             android:layout_height="75dp">
 
             <TextView
+                android:layout_margin="5dp"
                 android:id="@+id/fragment1_button1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@mipmap/first_pic2"
+                android:background="@mipmap/fragment1_1"
                 android:gravity="center_vertical|center"
                 android:text="粥"
                 android:textSize="0sp" />
             <TextView
+                android:layout_margin="5dp"
                 android:text="肉"
                 android:id="@+id/fragment1_button2"
-                android:background="@mipmap/first_pic2"
+                android:background="@mipmap/fragment1_2"
                 android:gravity="center_vertical|center"
                 android:textSize="0sp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent" />
             <TextView
-                android:text="鱼"
+                android:layout_margin="5dp"
+                android:text="鸡"
                 android:id="@+id/fragment1_button3"
-                android:background="@mipmap/first_pic2"
+                android:background="@mipmap/fragment1_3"
                 android:gravity="center_vertical|center"
                 android:textSize="0sp"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent" />
             <TextView
-                android:text="瓜"
+                android:layout_margin="5dp"
+                android:text="面"
                 android:id="@+id/fragment1_button4"
-                android:background="@mipmap/first_pic2"
+                android:background="@mipmap/fragment1_4"
                 android:gravity="center_vertical|center"
                 android:textSize="0sp"
                 android:layout_weight="1"
@@ -63,6 +94,8 @@
 
         </LinearLayout>
         <LinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="20dp">
@@ -98,8 +131,8 @@
 
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@color/text1"
             android:layout_width="match_parent"
             android:layout_height="1dp">
@@ -108,7 +141,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="85dp">
+            android:layout_height="140dp">
             <TextView
                 android:id="@+id/fragment1_button5"
                 android:text="#热门推荐"
@@ -136,7 +169,7 @@
 
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="85dp">
+            android:layout_height="140dp">
             <TextView
                 android:id="@+id/fragment1_button7"
                 android:text="#地方特色"
@@ -150,7 +183,7 @@
                 android:layout_height="match_parent" />
             <TextView
             android:id="@+id/fragment1_button8"
-            android:text="#猪肉炖粉条"
+            android:text="#卤肉凉面"
             android:textSize="20sp"
             android:gravity="center_vertical|center"
             android:textColor="@color/white"
@@ -167,58 +200,50 @@
             android:layout_width="match_parent"
             android:layout_height="1dp">
         </LinearLayout>
-        <TextView
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="   #精品菜单"/>
-
-        <TextView
-            android:layout_gravity="center"
-            android:id="@+id/fragment1_button9"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_margin="5dp"
-            android:background="@mipmap/pic9"
-            android:gravity="center_vertical|center"
-            android:text="#小菜系列"
-            android:textColor="@color/white"
-            android:textSize="30sp" />
-
-        <TextView
-            android:layout_gravity="center"
-            android:id="@+id/fragment1_button10"
-            android:layout_margin="10dp"
-            android:text="#爆肝系列"
-            android:textSize="30sp"
-            android:gravity="center_vertical|center"
-            android:textColor="@color/white"
-            android:background="@mipmap/pic10"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp" />
-        <TextView
-            android:layout_gravity="center"
-            android:id="@+id/fragment1_button11"
-            android:layout_margin="10dp"
-            android:text="#红烧系列"
-            android:textSize="30sp"
-            android:gravity="center_vertical|center"
-            android:textColor="@color/white"
-            android:background="@mipmap/pic11"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp" />
-        <TextView
-            android:background="@mipmap/pic12"
-            android:layout_gravity="center"
-            android:id="@+id/fragment1_button12"
-            android:layout_margin="10dp"
-            android:text="#西式系列"
-            android:textSize="30sp"
-            android:gravity="center_vertical|center"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp" />
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fragment1_buttom1"
+                android:text="大葱烧牛肉"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:background="@mipmap/pic1"
+                android:layout_width="250dp"
+                android:layout_height="150dp" />
+            <TextView
+                android:id="@+id/fragment1_buttom2"
+                android:text="地三鲜"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:background="@mipmap/pic2"
+                android:layout_width="250dp"
+                android:layout_height="150dp" />
+            <TextView
+                android:id="@+id/fragment1_buttom3"
+                android:text="番茄炖猪软骨"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:background="@mipmap/pic3"
+                android:layout_width="250dp"
+                android:layout_height="150dp" />
+        </LinearLayout>
 
     </LinearLayout>
-
-
     </ScrollView>

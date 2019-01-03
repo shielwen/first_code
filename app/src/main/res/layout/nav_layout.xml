@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="@mipmap/pic4">
+    android:background="@mipmap/goodpic6">
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/nav_item_image"
         android:layout_width="70dp"

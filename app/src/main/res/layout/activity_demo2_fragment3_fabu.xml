@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/color_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/button_back"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="取消"
+                android:textColor="#fff" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#fff" />
+            <TextView
+                android:id="@+id/button_fabu"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="发布"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/li_edt1"
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:hint="菜名"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/li_edt2"
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:hint="简介"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/li_edt3"
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:hint="配料"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/li_edt4"
+                android:gravity="top"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:hint="做法"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#fff"
+                android:background="#c62e3b"
+                android:textSize="35dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

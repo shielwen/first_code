@@ -3,58 +3,28 @@
     <group android:checkableBehavior="single">
     <item
         android:id="@+id/nav_1"
-        android:title="我的信息"
-        android:icon="@drawable/tab_menu_shouye1"
+        android:title="我的收藏"
+        android:icon="@mipmap/buttonpic11"
         ></item>
     <item
         android:id="@+id/nav_2"
-        android:icon="@drawable/tab_menu_shouye1"
-        android:title="菜篮子"
+        android:icon="@mipmap/buttonpic11"
+        android:title="浏览纪录"
         ></item>
     <item
         android:id="@+id/nav_3"
-        android:icon="@drawable/tab_menu_shouye1"
-        android:title="我的收藏"
+        android:icon="@mipmap/buttonpic11"
+        android:title="联系我们"
         ></item>
     <item
         android:id="@+id/nav_4"
-        android:icon="@drawable/tab_menu_shouye1"
-        android:title="浏览记录"
+        android:icon="@mipmap/buttonpic11"
+        android:title="设置"
         ></item>
         <item
             android:id="@+id/nav_5"
-            android:icon="@drawable/tab_menu_shouye1"
-            android:title="设置"
-            ></item>
-        <item
-            android:id="@+id/nav_6"
-            android:icon="@drawable/tab_menu_shouye1"
-            android:title="联系我们"
-            ></item>
-        <item
-            android:id="@+id/nav_7"
-            android:icon="@drawable/tab_menu_shouye1"
-            android:title="###"
-            ></item>
-        <item
-            android:id="@+id/nav_8"
-            android:icon="@drawable/tab_menu_shouye1"
-            android:title="###"
-            ></item>
-        <item
-            android:id="@+id/nav_9"
-            android:icon="@drawable/tab_menu_shouye1"
-            android:title="###"
-            ></item>
-        <item
-            android:id="@+id/nav_10"
-            android:icon="@drawable/tab_menu_shouye1"
-            android:title="###"
-            ></item>
-        <item
-            android:id="@+id/nav_11"
-            android:icon="@drawable/tab_menu_shouye1"
-            android:title="###"
+            android:icon="@mipmap/buttonpic11"
+            android:title="版本"
             ></item>
     </group>
 </menu>

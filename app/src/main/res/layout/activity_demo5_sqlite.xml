@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".demo5_sqlite.demo5_sqlite">
     <LinearLayout
+        android:padding="20dp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical" >
@@ -23,19 +24,18 @@
             android:id="@+id/demo5_sqlite_button3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="删"/>
+            android:text="button3"/>
         <Button
             android:id="@+id/demo5_sqlite_button4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="修改密码"/>
+            android:text="button"/>
         <Button
             android:id="@+id/demo5_sqlite_button5"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="查询"/>
+            android:text="button"/>
         <View
-            android:background="@color/text2"
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
@@ -44,27 +44,27 @@
             android:id="@+id/demo5_sqlite_button6"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Menu 的管理"/>
+            android:text=" button"/>
         <Button
             android:id="@+id/demo5_sqlite_button7"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="增"/>
+            android:text="button"/>
         <Button
             android:id="@+id/demo5_sqlite_button8"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="删"/>
+            android:text="button"/>
         <Button
             android:id="@+id/demo5_sqlite_button9"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="修改密码"/>
+            android:text="button"/>
         <Button
             android:id="@+id/demo5_sqlite_button10"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="查询"/>
+            android:text="button"/>
         <TextView
             android:id="@+id/demo5_sqlite_button11"
             android:layout_width="match_parent"

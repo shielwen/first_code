@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.shieldwen.firs_code.Adtopoter.soup_adapter;
 import com.example.shieldwen.firs_code.R;
 import com.example.shieldwen.firs_code.a_public_class.app_Image;
 import com.example.shieldwen.firs_code.a_public_class.app_menu;
 import com.example.shieldwen.firs_code.a_thing_class.class_demo1_soup;
+import com.example.shieldwen.firs_code.demo5_sqlite.dao.Myhistorydao;
+import com.example.shieldwen.firs_code.demo5_sqlite.model.Myhistory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,11 +25,11 @@ public class demo1_menu_list extends AppCompatActivity {
     private Intent intent2;//向下传输数据
     private Intent getintent;
     private List<class_demo1_soup> souplist = new ArrayList<>();
+    public static int myhistoryid= 1001;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo1_menu_list);
-        app_Image.setFragment1();
         app_menu.setMenu_name();
         addAdapter();
         getintent = getIntent();
@@ -36,14 +39,25 @@ public class demo1_menu_list extends AppCompatActivity {
 
     }
 
+    //listview的点击事件
     private  void listClick(){
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView <?> parent, View view, int position, long id) {
                 class_demo1_soup soup = souplist.get(position);
-                intent2 = new Intent(demo1_menu_list.this,demo1_menu.class);
-                intent2.putExtra("menu_name",soup.getName());
-                startActivity(intent2);
+                if(soup.getName().equals("抱歉！根据你的搜索\n什么都没有")){
+                    Toast.makeText(demo1_menu_list.this,"什么都没有~~~",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    intent2 = new Intent(demo1_menu_list.this,demo1_menu.class);
+                    intent2.putExtra("menu_name",soup.getName());
+                    Myhistory m = new Myhistory();
+                    m.setId(myhistoryid++);
+                    m.setMenu_name(soup.getName());
+                    Myhistorydao.insert(m);
+                    startActivity(intent2);
+                }
+
             }
         });
     }
@@ -57,7 +71,6 @@ public class demo1_menu_list extends AppCompatActivity {
         souplist.clear();
         String[] menu_name= new String[app_menu.menu_name.length];
         String[] menu_image= new String[app_menu.menu_name.length];
-
         for (int i = 0; i < app_menu.menu_name.length; i++) {
             menu_name[i] = "000";
         }
@@ -76,8 +89,7 @@ public class demo1_menu_list extends AppCompatActivity {
             for (int i = 0; i < j; i++) {
                 class_demo1_soup soup1 = new class_demo1_soup();
                 soup1.setName(menu_name[i]);
-                if(kk==app_Image.fragment1_image.length){ kk=0;}
-                soup1.setImageId(app_Image.fragment1_image[kk++]);
+                soup1.setImageId(app_Image.fragment1_image[i]);
                 souplist.add(soup1);
             }
 

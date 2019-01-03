@@ -10,10 +10,13 @@ import android.widget.Button;
 
 import com.example.shieldwen.firs_code.demo1.demo1_main;
 import com.example.shieldwen.firs_code.demo2.demo2_main;
-import com.example.shieldwen.firs_code.demo3_qqshare.demo3_main;
+import com.example.shieldwen.firs_code.demo3.demo3_main;
 import com.example.shieldwen.firs_code.demo4.demo4_zhiwen;
+import com.example.shieldwen.firs_code.demo5_sqlite.dao.MyDatabaseHelper;
+import com.example.shieldwen.firs_code.demo5_sqlite.dao.start_useTable;
 import com.example.shieldwen.firs_code.demo5_sqlite.demo5_sqlite;
-import com.example.shieldwen.firs_code.demo6_mysql.demo6_jdbc;
+import com.example.shieldwen.firs_code.demo8_tomacat_jsp.demo8_tomacat;
+import com.example.shieldwen.firs_code.demo9_login.demo9_login;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button button1;
@@ -22,17 +25,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button4;
     private Button button5;
     private Button button6;
-    Intent intent1;
-    Intent intent2;
-    Intent intent3;
-    Intent intent4;
-    Intent intent5;
-    Intent intent6;
+    private Button button7;
+    private Button button9;
+    Intent intent;
+
     private static final String SWOR="SWORD";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MyDatabaseHelper myDatabaseHelper=start_useTable.create(this);
         ActionBar actionBar =getSupportActionBar();//隐藏标题
         if(actionBar !=null){
             actionBar.hide();
@@ -49,37 +51,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button5.setOnClickListener(this);
         button6=(Button)findViewById(R.id.button6);
         button6.setOnClickListener(this);
-
-
+        button7=(Button)findViewById(R.id.button7);
+        button7.setOnClickListener(this);
+        button9=(Button)findViewById(R.id.button9);
+        button9.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button1:
-                intent1 = new Intent(MainActivity.this,demo1_main.class);
-                startActivity(intent1);
+                intent = new Intent(MainActivity.this,demo1_main.class);
+                startActivity(intent);
                 Log.i(SWOR,"123");
                      break;
             case R.id.button2:
-                intent2 = new Intent(MainActivity.this,demo2_main.class);
-                startActivity(intent2);
+                intent = new Intent(MainActivity.this,demo2_main.class);
+                startActivity(intent);
                 break;
             case R.id.button3:
-                intent3 = new Intent(MainActivity.this,demo3_main.class);
-                startActivity(intent3);
+                intent = new Intent(MainActivity.this,demo3_main.class);
+                startActivity(intent);
                 break;
             case R.id.button4:
-                intent4 = new Intent(MainActivity.this,demo4_zhiwen.class);
-                startActivity(intent4);
+                intent = new Intent(MainActivity.this,demo4_zhiwen.class);
+                startActivity(intent);
                 break;
             case R.id.button5:
-                intent5 = new Intent(MainActivity.this,demo5_sqlite.class);
-                startActivity(intent5);
+                intent = new Intent(MainActivity.this,demo5_sqlite.class);
+                startActivity(intent);
                 break;
-            case R.id.button6:
-                intent6 = new Intent(MainActivity.this,demo6_jdbc.class);
-                startActivity(intent6);
+            case R.id.button7:
+                intent = new Intent(MainActivity.this,demo8_tomacat.class);
+                startActivity(intent);
+                break;
+            case R.id.button9:
+                intent = new Intent(MainActivity.this,demo9_login.class);
+                startActivity(intent);
                 break;
                      default:
                     break;

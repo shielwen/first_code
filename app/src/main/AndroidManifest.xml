@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shieldwen.firs_code">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -35,25 +36,28 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/first_pic2"
+        android:icon="@mipmap/tubiao"
         android:label="菜道"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".demo3.demo3_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
+        </activity>
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/tab_menu_channel2" />
 
         <activity android:name=".demo2.demo2_main" />
-        <activity android:name=".demo3_qqshare.demo3_main" />
+
         <activity android:name=".demo4.demo4_zhiwen" />
         <activity android:name=".demo1.demo1_main" />
         <activity android:name=".demo1.demo1_menu" />
@@ -76,7 +80,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".demo1.demo1_menu_list" />
-        <activity android:name=".demo6_mysql.demo6_jdbc" />
         <activity android:name=".demo5_sqlite.demo5_sqlite" />
 
         <meta-data
@@ -92,7 +95,16 @@
         <activity android:name=".demo7_otheractivity.demo7_menu" />
         <activity android:name=".demo7_otheractivity.demo7_order" />
         <activity android:name=".demo7_otheractivity.demo7_contact" />
-        <activity android:name=".demo5_sqlite.demo5_User"></activity>
+        <activity android:name=".demo5_sqlite.demo5_User" />
+        <activity android:name=".demo5_sqlite.demo5_Menu" />
+        <activity android:name=".demo2.demo2_fragment3_fabu" />
+        <activity android:name=".demo7_otheractivity.demo7_gengxing" />
+        <activity android:name=".demo7_otheractivity.demo7_setting" />
+        <activity android:name=".demo5_sqlite.demo5_mycollect" />
+        <activity android:name=".demo8_tomacat_jsp.demo8_tomacat" />
+        <activity android:name=".demo7_otheractivity.demo7_main_setting" />
+        <activity android:name=".demo9_login.demo9_login" />
+        <activity android:name=".demo9_login.demo9_register" />
     </application>
 
 </manifest>

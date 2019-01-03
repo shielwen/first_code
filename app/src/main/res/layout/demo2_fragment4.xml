@@ -2,7 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="#FFF6F9"
+    android:background="@mipmap/wall_p1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,46 +10,41 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:background="@color/color_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_centerInParent="true"
+                android:text="我的"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
         <LinearLayout
             android:padding="20dp"
             android:background="@mipmap/goodpic6"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="170dp">
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/fragment4_button0"
                 android:layout_width="70dp"
                 android:layout_gravity="center"
                 android:src="@mipmap/first_pic2"
                 android:layout_height="70dp" />
+
             <TextView
                 android:id="@+id/fragment4_button1"
-                android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textSize="18sp"
+                android:layout_marginTop="10dp"
                 android:text="雪中漫步"
-                android:textColor="@color/white"/>
-            <LinearLayout
-                android:id="@+id/fragment4_button2"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textSize="10sp"
-                    android:text="编辑资料"
-                    android:textColor="@color/white"/>
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@mipmap/smallpic2"/>
-            </LinearLayout>
+                android:textColor="@color/white"
+                android:textSize="18sp" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/fragment4_button3"
@@ -190,6 +185,7 @@
             android:layout_height="0.3dp">
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/fragment4_button8"
             android:background="@color/white"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
@@ -216,7 +212,7 @@
             android:layout_height="0.3dp">
         </LinearLayout>
         <LinearLayout
-
+            android:id="@+id/fragment4_button9"
             android:background="@color/white"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"

@@ -42,7 +42,7 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="3 左侧滑动"
+            android:text="3 启动页"
             android:background="@color/text2"
             />
         <Button
@@ -62,7 +62,7 @@
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="5 菜谱实现"
+            android:text="5 管理员"
             android:background="@color/text2"
             />
         <Button
@@ -73,6 +73,26 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="6 jdbc"
+            android:background="@color/text2"
+            />
+       <Button
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="7 服务器"
+        android:background="@color/text2"
+        />
+        <Button
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="9 登录"
             android:background="@color/text2"
             />
     </LinearLayout>

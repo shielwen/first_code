@@ -1,51 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
-        android:focusableInTouchMode="true"
-        android:gravity="center"
-        android:focusable="true"
-        android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/fragment3_bt1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-</LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/fragment3_bt2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content" />
-        <Button
-            android:text="发送"
-            android:id="@+id/fragment3_bt3"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+        android:layout_height="match_parent">
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="2000dp">
-            <ListView
-                android:layout_margin="10dp"
-                android:id="@+id/fragment3_list"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-            </ListView>
-
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:background="@color/color_one"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:text="社区"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/demo2_fragment3_shequ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
-
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/icon_add"
+        app:elevation="1dp"/>
+</FrameLayout>

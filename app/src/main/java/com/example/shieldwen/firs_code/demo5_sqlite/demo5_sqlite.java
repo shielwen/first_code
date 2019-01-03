@@ -4,19 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.shieldwen.firs_code.Mysql_jdbc.User;
 import com.example.shieldwen.firs_code.R;
 import com.example.shieldwen.firs_code.demo5_sqlite.dao.MyDatabaseHelper;
-import com.example.shieldwen.firs_code.demo5_sqlite.dao.Userdao;
 import com.example.shieldwen.firs_code.demo5_sqlite.dao.start_useTable;
-import com.example.shieldwen.firs_code.demo5_sqlite.model.Myuser;
 
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 
 public class demo5_sqlite extends AppCompatActivity implements OnClickListener{
@@ -37,7 +32,6 @@ public class demo5_sqlite extends AppCompatActivity implements OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo5_sqlite);
-        MyDatabaseHelper myDatabaseHelper=start_useTable.create(this);
         findViews();
     }
     private void findViews() {
@@ -70,10 +64,15 @@ public class demo5_sqlite extends AppCompatActivity implements OnClickListener{
             case R.id.demo5_sqlite_button1:
                 intent = new Intent(demo5_sqlite.this,demo5_User.class);
                 startActivity(intent);
-
                 break;
-            case R.id.demo5_sqlite_button2:break;
-            case R.id.demo5_sqlite_button3:break;
+            case R.id.demo5_sqlite_button2:
+                intent = new Intent(demo5_sqlite.this,demo5_Menu.class);
+                startActivity(intent);
+                break;
+            case R.id.demo5_sqlite_button3:
+                intent = new Intent(demo5_sqlite.this,demo5_mycollect.class);
+                startActivity(intent);
+                break;
             case R.id.demo5_sqlite_button4:break;
             case R.id.demo5_sqlite_button5:break;
             case R.id.demo5_sqlite_button6:break;

@@ -83,10 +83,6 @@ public class demo5_User extends AppCompatActivity implements View.OnClickListene
                     }else {
                         text.append("密码："+"---"+text1);  text.append("\n");
                     }
-
-
-
-
                 }
                 textview10.setText(text+"123");
                 break;

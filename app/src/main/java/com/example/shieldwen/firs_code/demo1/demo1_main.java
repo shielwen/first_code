@@ -30,7 +30,6 @@ public class demo1_main extends AppCompatActivity {
         setContentView(R.layout.activity_demo1_main);
         app_menu.setMenu_name();
         //赋予菜
-        Toast.makeText(demo1_main.this,app_menu.menu_name.length+"",Toast.LENGTH_SHORT).show();
         addAdapter1(app_menu.menu_name);//自动文本框
         button = (Button)findViewById(R.id.demo1_sousuo2);
         button.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +38,6 @@ public class demo1_main extends AppCompatActivity {
                 str_sousuo = editText.getText().toString();
                 if(str_sousuo==null){
                 }else {
-                    Toast.makeText(demo1_main.this,"123",Toast.LENGTH_SHORT).show();
                     intent1 = new Intent(demo1_main.this,demo1_menu_list.class);
                     intent1.putExtra("menu_name",str_sousuo);
                     startActivity(intent1);

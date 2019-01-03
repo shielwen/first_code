@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.shieldwen.firs_code.R;
@@ -17,11 +18,19 @@ import com.example.shieldwen.firs_code.R;
 public class demo7_contact extends AppCompatActivity {
     private LinearLayout button1;
     private LinearLayout button2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo7_contact);
 
+        TextView textView =findViewById(R.id.demo7_contact_back);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         button1 =findViewById(R.id.demo7_contact_button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -14,23 +14,28 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public static final String CREATE_MENU="create table Menu("
             + "id integer primary key autoincrement," +
             "menu_name text," +
-            "image integer,"+
-            " jianjie text," +
-            "cailiao text," +
-            "zuofa text," +
-            "xiaotieshi text)";
+            "peiliao text)";
+    public static final String CREATE_MYCOLLECT="create table Mycollect("
+            + "id integer primary key autoincrement,"
+            + "menu_name text )";
+    public static final String CREATE_MYHISTORY="create table Myhistory("
+            + "id integer primary key autoincrement,"
+            + "menu_name text  )";
+
 
 
 
      public MyDatabaseHelper(Context context,String name,SQLiteDatabase.CursorFactory factory,int version){
          super(context,name,factory,version);
          mcontext=context;
-         Toast.makeText(mcontext,"2",Toast.LENGTH_SHORT).show();
+
      }
      @Override
     public void onCreate(SQLiteDatabase db){
          db.execSQL(CREATE_USER);
+         db.execSQL(CREATE_MYCOLLECT);
          db.execSQL(CREATE_MENU);
+         db.execSQL(CREATE_MYHISTORY);
          Toast.makeText(mcontext,"12",Toast.LENGTH_SHORT).show();
 
      }
@@ -40,6 +45,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
          String str = "drop table if exists ";
         db.execSQL(str +"User");
         db.execSQL(str +"Menu");
+        db.execSQL(str +"Mycollect");
+        db.execSQL(str +"Myhistory");
         onCreate(db);
     }
 }

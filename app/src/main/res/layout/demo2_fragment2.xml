@@ -4,21 +4,165 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@color/color_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="分类"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/color_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/demo2_fragment2_find"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:text="    搜     索"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <ListView
-            android:id="@+id/fragment2_left_list"
-            android:layout_width="101dp"
-            android:layout_height="fill_parent">
-        </ListView>
-        <ListView
-            android:id="@+id/fragment2_right_list"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        </ListView>
+        <ScrollView
+            android:background="@color/color_one"
+            android:layout_width="90dp"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/color_one"
+        android:orientation="vertical"
+        android:layout_width="90dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/fragment2_text1"
+            android:text="菜系"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text2"
+            android:text="烹饪方法"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text3"
+            android:text="口味"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text4"
+            android:text="菜式"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text5"
+            android:text="主食"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text6"
+            android:text="烘焙"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text7"
+            android:text="厨房工具"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text8"
+            android:text="场景"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/fragment2_text9"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="人群"
+            android:textSize="18sp" />
+        <TextView
+        android:id="@+id/fragment2_text10"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="美容瘦身"
+        android:textSize="18sp" />
 
+
+        <TextView
+            android:id="@+id/fragment2_text11"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="功效"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/fragment2_text12"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="疾病调理"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/fragment2_text13"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="节日/时令"
+            android:textSize="18sp" />
+
+    </LinearLayout></ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <GridView
+            android:layout_margin="5dp"
+            android:horizontalSpacing="5dp"
+            android:id="@+id/fragment2_gridview"
+            android:numColumns="3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </GridView>
     </LinearLayout>
-
+    </LinearLayout>
 </LinearLayout>

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".demo1.demo1_main">
@@ -42,15 +43,32 @@
             android:layout_width="match_parent"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <TextView
                 android:layout_width="match_parent"
                 android:gravity="center"
-                android:text="历史记录"
+                android:text="暂定 可搜菜"
                 android:layout_height="30dp" />
-            <include layout="@layout/activity_null__null"></include>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15sp"
+                android:text="
+ 大葱烧牛肉 地三鲜 番茄炖猪软骨夫妻肺片黑胡椒蟹
+
+ 虎皮鸡爪 琥珀糖 姜葱蚝煲 酒鬼花生 咖哩土豆猪肉煎饺
+
+ 可乐饼 老北京鸡肉卷 卤肉凉面 麻辣花椒鸡 麻辣小龙虾
+
+ 南瓜百合瘦肉粥 水果棒冰 酸溜土豆丝 香辣鸡胗炒腊肉
+
+ 紫苏叶豚肉年糕串"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
     </LinearLayout>
 
 

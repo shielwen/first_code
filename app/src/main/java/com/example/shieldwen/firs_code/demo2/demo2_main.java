@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -24,12 +25,18 @@ import android.widget.Toast;
 
 import com.example.shieldwen.firs_code.R;
 import com.example.shieldwen.firs_code.demo1.demo1_main;
+import com.example.shieldwen.firs_code.demo7_otheractivity.demo7_collect;
+import com.example.shieldwen.firs_code.demo7_otheractivity.demo7_contact;
+import com.example.shieldwen.firs_code.demo7_otheractivity.demo7_gengxing;
+import com.example.shieldwen.firs_code.demo7_otheractivity.demo7_history;
+import com.example.shieldwen.firs_code.demo7_otheractivity.demo7_mainActivity;
+import com.example.shieldwen.firs_code.demo7_otheractivity.demo7_setting;
 
 import java.util.TreeMap;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class demo2_main extends AppCompatActivity implements View.OnClickListener {
+public class demo2_main extends AppCompatActivity implements View.OnClickListener{
 
     private int den=0;
     private  int den2=0;
@@ -47,27 +54,28 @@ public class demo2_main extends AppCompatActivity implements View.OnClickListene
     private demo2_fragment4 fg4;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
+
     //左侧滑动
-    private DrawerLayout drawerLayout;//布局
-    private ActionBar actionBar;//左上角按钮
-    private NavigationView navigationView;//丰富左侧menu
-    //nav 的点击
+    private DrawerLayout drawerLayout;
+    //添加布局后的 左侧滑动
+    private NavigationView navigationView;
+
+    //左侧滑动 头像与名字 的点击
     private CircleImageView circleImageView;
     private TextView nav_textView1;
-    //toolbar
-    private Toolbar toolbar;//标题布局
 
-    private Intent intent_search;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo2);
+        putSharedPreferencesInt("data","login",1);
         //跳转界面1
-        buildId();
-        replaceFragment(new demo2_fragment1());
-        changeImage(1);
-        toolbar_menu();
+        buildId();//获取焦点
+        replaceFragment(new demo2_fragment1());//初始化第一个碎片
+        changeImage(1);//切换图片
+        navigationView();
     }
     private void  buildId(){
         imageView1 =(ImageView)findViewById(R.id.buttom_button1);
@@ -79,71 +87,7 @@ public class demo2_main extends AppCompatActivity implements View.OnClickListene
         imageView3.setOnClickListener(this);
         imageView4.setOnClickListener(this);
 
-    }
-    //UI  toobar ++menu++nav
-    private  void toolbar_menu(){
-        //右上角的按钮实现
-        drawerLayout=(DrawerLayout)findViewById(R.id.drawer_layout);
-
-        //第一步  设置 简单toolbar
-        toolbar = (Toolbar)findViewById(R.id.toolbar_yemian);
-        setSupportActionBar(toolbar);
-        toolbar.setTitle(null);
-
-        //设置左上角的按钮 会出现左侧菜单
-        actionBar=getSupportActionBar();
-        actionBar.setTitle(null);
-        if(actionBar!=null){
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.tab_menu_shouye1);
-        }
-        //丰富左侧按钮的布局  导入 menu和nav_layout
-        navigationView =(NavigationView)findViewById(R.id.nav_view);
-        //navigatiomView中的点击事件
-           //头像和用户名的点击事件
-       View headView = navigationView.getHeaderView(0);
-       TextView nav_textView1 =headView.findViewById(R.id.nav_item_id1);
-       nav_textView1.setOnClickListener(this);
-       CircleImageView nav_circleImageView1 =headView.findViewById(R.id.nav_item_image);
-       nav_circleImageView1.setOnClickListener(this);
-    }
-
-    //顶部的toolbar 的显示 和点击
- public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-            switch (item.getItemId()) {
-                //左上角的点击事件
-                case android.R.id.home:
-                    drawerLayout.openDrawer(GravityCompat.START);
-                    break;
-                    //右边的点击事件
-            case R.id.toolbar_button1:
-                intent_search = new Intent(demo2_main.this,demo1_main.class);
-                intent_search.putExtra("fenlei_yes","no");
-                startActivity(intent_search);
-                break;
-            case R.id.toolbar_button2:
-                if(den==0){
-                    putSharedPreferencesInt("data","login",0);
-                    den=1;
-                }else {
-                    putSharedPreferencesInt("data","login",1);
-                    den =0;
-                }
-
-                   break;
-            default:
-                break;
-        }
-        return true;
-    }
-
-
-    //UI  底部导航栏的一切   +底部点击事件 和左侧菜单点击事件
+    }//获取焦点
     public void changeImage(int i){
         switch (i){
             case 1:
@@ -173,27 +117,19 @@ public class demo2_main extends AppCompatActivity implements View.OnClickListene
 
         }
 
-    }
-
-
-    public void changeText(int i){
-
-        switch (i){
-            case 1:
-        }
-    }
+    }//修改图片
     public void replaceFragment(Fragment fragment){
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_middle,fragment);
         fragmentTransaction.commit();
-    }
+    }//切换中间碎片
+
     public void onClick(View v) {
         int change=0;
         switch (v.getId()){
             case R.id.buttom_button1:
                 change =1;changeImage(change);
-                    Toast.makeText(demo2_main.this,"首页",Toast.LENGTH_SHORT).show();
                     if (fg1 == null) {
                     fg1 = new demo2_fragment1();
                     replaceFragment(fg1);
@@ -237,28 +173,56 @@ public class demo2_main extends AppCompatActivity implements View.OnClickListene
                 }else {
                     Toast.makeText(demo2_main.this,"please login  2!",Toast.LENGTH_SHORT).show();
                 }
-
-
-                break;
-                //nav 的点击
-            case R.id.nav_item_id1:
-                Toast.makeText(demo2_main.this,"this is id",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.nav_item_image:
-                Toast.makeText(demo2_main.this,"。。。",Toast.LENGTH_SHORT).show();
                 break;
                 default:
                     break;
         }
-    }
+    }//点击事件
+
+    public void navigationView(){
+        navigationView=findViewById(R.id.nav_view1);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.nav_item_image:
+                        intent=new Intent(demo2_main.this,demo7_mainActivity.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_1:
+                        intent=new Intent(demo2_main.this,demo7_collect.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_2:
+                        intent=new Intent(demo2_main.this,demo7_history.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_3:
+                        intent=new Intent(demo2_main.this,demo7_contact.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_4:
+                        intent=new Intent(demo2_main.this,demo7_setting.class);
+                        startActivity(intent);
+                        break;
+                    case R.id.nav_5:
+                        intent=new Intent(demo2_main.this,demo7_gengxing.class);
+                        startActivity(intent);
+                        break;
+                }
+                drawerLayout.closeDrawers();
+                return true;
+            }
+        });
+    }//左侧滑动的下半部分的点击事件
+
+
+
+    //缓存文件  一般不用
     public void putSharedPreferencesString(String filename,String id,String con){
         SharedPreferences.Editor editor = getSharedPreferences(filename,MODE_PRIVATE).edit();
         editor.putString(id,con);
-        editor.apply();
-    }
-    public void putSharedPreferencesInt(String filename,String id,int con){
-        SharedPreferences.Editor editor = getSharedPreferences(filename,MODE_PRIVATE).edit();
-        editor.putInt(id,con);
         editor.apply();
     }
     public String getSharedPreferencesString(String filename,String id){
@@ -266,11 +230,17 @@ public class demo2_main extends AppCompatActivity implements View.OnClickListene
         String con = preferences.getString(id,"");
         return con;
     }
+    public void putSharedPreferencesInt(String filename,String id,int con){
+        SharedPreferences.Editor editor = getSharedPreferences(filename,MODE_PRIVATE).edit();
+        editor.putInt(id,con);
+        editor.apply();
+    }
     public int getSharedPreferencesInt(String filename,String id){
         SharedPreferences preferences = getSharedPreferences(filename,MODE_PRIVATE);
         int con = preferences.getInt(id,0);
         return con;
     }
+
 
 
  }

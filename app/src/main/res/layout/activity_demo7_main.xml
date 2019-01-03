@@ -1,9 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/wall_p1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".demo7_otheractivity.demo7_mainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/color_one"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/demo7_main_back"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="返回"
+                android:textColor="#fff" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="个人资料"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#fff" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="#fff" />
 
-</android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@mipmap/goodpic6"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_button0"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/first_pic2"
+            android:layout_height="70dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="0.5dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="ID:"
+                    android:textSize="12sp" />
+            <TextView
+                android:id="@+id/mybutton1"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="0001"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_margin="0.5dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:text="用户名:" />
+                <TextView
+                    android:id="@+id/mybutton2"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:text="菜道"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="0.5dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:text="最爱的菜:" />
+                <TextView
+                    android:id="@+id/mybutton3"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:text="0000"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="0.5dp"
+                android:id="@+id/my_button4"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="个性签名:"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/mybutton4"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:text="0000"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="0.5dp"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:text="个性签名:" />
+                <TextView
+                    android:id="@+id/mybutton5"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:text="0000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/mybutton6"
+                android:gravity="center"
+                android:background="@color/color_one"
+                android:layout_margin="10dp"
+                android:text="待定"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/mybutton7"
+                android:gravity="center"
+                android:background="@color/color_one"
+                android:layout_margin="10dp"
+                android:text="修改资料"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

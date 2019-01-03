@@ -12,6 +12,7 @@ public class Userdao {
         public  static MyDatabaseHelper myDatabaseHelper =start_useTable.myDatabaseHelper;
         public static   SQLiteDatabase sqLiteDatabase = myDatabaseHelper.getWritableDatabase();
         public static   ContentValues contentValues = new ContentValues();
+
         public static void insert(Myuser myuser){
             contentValues.put("id",myuser.getId());
             contentValues.put("username",myuser.getUsername());

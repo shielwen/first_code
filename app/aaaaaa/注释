@@ -5,5 +5,15 @@ demo2-主页面的跳转
 demo3-左侧菜单的滑动
 demo4-指纹识别
 
+demo2_主页面编辑
+
 
 demo1: 和搜索相关的东西  1.main是主要搜索框界面  2.menu则是具体的菜谱介绍
+
+   <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_yemian"
+            android:layout_width="match_parent"
+            android:background="@color/text"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
