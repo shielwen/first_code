@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.shieldwen.firs_code.R;
+import com.example.shieldwen.firs_code.demo10.demo10_login;
 
 public class demo9_register extends AppCompatActivity {
     EditText editText1,editText2,editText3,editText4;
@@ -48,7 +49,7 @@ public class demo9_register extends AppCompatActivity {
                     putSharedPreferencesString(a+"", "password",b+"");
                     putSharedPreferencesString(a+"", "lovemenu",c+"");
                     putSharedPreferencesString(a+"","signature",d+"");
-                    Intent intent = new Intent(demo9_register.this, demo9_login.class);
+                    Intent intent = new Intent(demo9_register.this, demo10_login.class);
                     startActivity(intent);
                     Toast.makeText(demo9_register.this, "注册成功", Toast.LENGTH_SHORT).show();
                     finish();

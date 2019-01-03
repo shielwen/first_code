@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.shieldwen.firs_code.R;
+import com.example.shieldwen.firs_code.demo10.demo10_login;
 import com.example.shieldwen.firs_code.demo2.demo2_main;
 import com.example.shieldwen.firs_code.demo9_login.demo9_login;
 
@@ -46,7 +47,7 @@ public class demo7_setting extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(demo7_setting.this,"已退出",Toast.LENGTH_SHORT).show();
                 putSharedPreferencesString("login","ok","no");
-                Intent intent = new Intent(demo7_setting.this,demo9_login.class);
+                Intent intent = new Intent(demo7_setting.this,demo10_login.class);
                 startActivity(intent);
                 finish();
             }

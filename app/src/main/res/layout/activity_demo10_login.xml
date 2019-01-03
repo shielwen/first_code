@@ -1,0 +1,40 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/food"/>
+
+        <lib.kingja.switchbutton.SwitchMultiButton
+            android:id="@+id/switchmultibutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:selectedColor="@color/colorAccent"
+            app:strokeWidth="1dp"
+            app:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragment_container"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="60dp"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:background="@drawable/loginbutton" />
+    </LinearLayout>

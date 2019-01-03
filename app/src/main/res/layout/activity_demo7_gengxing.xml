@@ -44,7 +44,7 @@
         <ImageView
             android:layout_marginTop="90dp"
             android:layout_gravity="center"
-            android:src="@mipmap/tubiao"
+            android:src="@drawable/food"
             android:layout_width="180dp"
             android:layout_height="180dp" />
         <TextView

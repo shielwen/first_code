@@ -1,5 +1,8 @@
 package com.example.shieldwen.firs_code.demo3;
 
+import com.example.shieldwen.firs_code.demo10.demo10_login;
+import com.example.shieldwen.firs_code.demo10.demo10_loginpick;
+import com.example.shieldwen.firs_code.demo10.demo10_resigter;
 import com.example.shieldwen.firs_code.demo2.demo2_main;
 import com.example.shieldwen.firs_code.demo5_sqlite.dao.MyDatabaseHelper;
 import com.example.shieldwen.firs_code.demo5_sqlite.dao.start_useTable;
@@ -25,6 +28,7 @@ public class demo3_main extends AppCompatActivity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo3_main);
+
         MyDatabaseHelper myDatabaseHelper=start_useTable.create(this);
         Handler handler = new Handler();
 
@@ -36,7 +40,7 @@ public class demo3_main extends AppCompatActivity implements OnClickListener {
                     startActivity(intent);
                 }
                 else {
-                    Intent intent = new Intent(demo3_main.this,demo9_login.class);
+                    Intent intent = new Intent(demo3_main.this,demo10_loginpick.class);
                     startActivity(intent);
                 }
                 finish();

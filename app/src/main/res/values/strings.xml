@@ -7,6 +7,28 @@
     <string name="zhehuo1">#各大界面</string>
     <string name="zhehuo">这货可以点</string>
 
+    <string name="tv1">忘记密码无法登录</string>
+    <string name="user">账号：</string>
+    <string name="password">密码：</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="name">姓名:</string>
+    <string name="inputname">请输入姓名</string>
+    <string name="phonenumber">手机:</string>
+    <string name="inputphonenumber">请输入手机号</string>
+    <string name="gender">性别:</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="address">地址:</string>
+    <string name="age">年龄:</string>
+    <string name="checkpassword">确认密码:</string>
+    <string name="inputcheckpassword">请再次输入密码</string>
+    <string name="register">注册</string>
+    <string name="back">返回</string>
+    <string name="getcode">获取验证码</string>
+    <string name="inputcode">请输入验证码</string>
+    <string name="code">验证码:</string>
+
     <!-- fragment2-->
     <string name="fragment2"># # #</string>
 
@@ -34,4 +56,5 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
+
 </resources>

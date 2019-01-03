@@ -85,7 +85,7 @@
                 android:gravity="center"
                 android:text="+"
                 android:textColor="#fff"
-                android:background="#c62e3b"
+                android:background="@color/color_one"
                 android:textSize="35dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp" />

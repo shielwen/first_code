@@ -25,6 +25,232 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/demo2_fragment_lin1"
+                android:paddingTop="10dp"
+                android:background="@color/color_one"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <LinearLayout
+                    android:paddingBottom="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/first_pic2"/>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:text="用户1"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                        <TextView
+                            android:text="今天 08:25"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="大葱炒牛肉"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:gravity="left"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/pic8"/>
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:background="@color/color_one"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <LinearLayout
+                    android:paddingBottom="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="75dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/first_pic2"/>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="用户2"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:text="昨天 08:25"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="中葱炒牛肉"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:gravity="left"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/pic5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:background="@color/color_one"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <LinearLayout
+                    android:paddingBottom="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="75dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/first_pic2"/>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="用户3"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:text="前天 21:35"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="小葱炒牛肉"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:gravity="left"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/pic9"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:background="@color/color_one"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <LinearLayout
+                    android:paddingBottom="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="75dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/first_pic2"/>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="用户4"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+                            <TextView
+                                android:text="前天 00：01"
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="迷你葱炒牛肉"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:gravity="left"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/pic2"/>
+                </LinearLayout>
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/demo2_fragment3_shequ"
                 android:layout_width="match_parent"

@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="11sp"
-                    android:text="最爱的菜:" />
+                    android:text="电话:" />
 
                 <EditText
                     android:id="@+id/demo7_set_edt3"
@@ -127,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textSize="11sp"
-                    android:text="个性签名:" />
+                    android:text="地址:" />
                 <EditText
                     android:id="@+id/demo7_set_edt4"
                     android:gravity="center_vertical"
@@ -168,6 +168,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="50dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="50dp">

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/phonenumber"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:gravity="center"
+            android:hint="@string/inputphonenumber"
+            android:textColorHint="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/code"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:hint="@string/inputcode"
+            android:gravity="center"
+            android:textColorHint="@color/colorAccent"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/getCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textSize="15dp"
+        android:background="@drawable/registerbutton"
+        android:textColor="@color/colorAccent"
+        android:text="@string/getcode"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
